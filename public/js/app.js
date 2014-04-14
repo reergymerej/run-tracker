@@ -1,12 +1,29 @@
 'use strict';
 
 // Set up the application
-var app = angular.module('run-tracker', []);
+angular.module('run-tracker', [
+    'ngRoute'
+])
+
+// routing ================================================
+.config(['$routeProvider', 
+    function ($routeProvider) {
+        // $routeProvider
+        //     .when('/', {
+        //         templateUrl: 'view/home.html',
+        //         controller: 'HomeCtrl'
+        //     })
+        //     .when('/add', {
+        //         templateUrl: 'view/add-run',
+        //         controller: 'AddRunCtrl'
+        //     })
+        //     .otherwise({
+        //         redirectTo: '/'
+        //     });
+    }])
 
 // controllers ================================================
-app.controller('NavCtrl', ['$scope', function ($scope) {
-    $scope.foo = 'Hello';
-
+.controller('NavCtrl', ['$scope', function ($scope) {
     $scope.pages = [
         {
             href: '/',
@@ -21,6 +38,10 @@ app.controller('NavCtrl', ['$scope', function ($scope) {
             name: 'view runs'
         }
     ];
+}])
+
+.controller('AddRunCtrl', ['$scope', function ($scope) {
+    $scope.foo = 'I am the AddRunCtrl.';
 }]);
 
 
