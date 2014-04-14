@@ -1,0 +1,5 @@
+h1 Run Tracker
+div(ng-controller="NavCtrl")
+    ul
+        li(ng-repeat="p in pages")
+            a(ng-href="#{{ p.href }}") {{ p.name }}

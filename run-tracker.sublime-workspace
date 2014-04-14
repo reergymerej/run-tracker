@@ -519,13 +519,52 @@
 	},
 	"buffers":
 	[
+		{
+			"file": "README.md",
+			"settings":
+			{
+				"buffer_size": 431,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "h1 Run Tracker\ndiv(ng-controller=\"NavCtrl\")\n    ul\n        li(ng-repeat=\"p in pages\")",
+			"file": "views/header.jade",
+			"file_size": 83,
+			"file_write_time": 130419130214303830,
+			"settings":
+			{
+				"buffer_size": 85,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "public/js/app.js",
+			"settings":
+			{
+				"buffer_size": 538,
+				"line_ending": "Unix"
+			}
+		}
 	],
 	"build_system": "Packages/JSLint/JSLint.sublime-build",
 	"command_palette":
 	{
-		"height": 359.0,
+		"height": 54.0,
 		"selected_items":
 		[
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"js",
+				"Set Syntax: JSON"
+			],
+			[
+				"lin",
+				"SublimeLinter: Lint This View"
+			],
 			[
 				"pro",
 				"Project: Save As"
@@ -533,10 +572,6 @@
 			[
 				"lint",
 				"SublimeLinter: Lint This View"
-			],
-			[
-				"json",
-				"Set Syntax: JSON"
 			],
 			[
 				"code fo",
@@ -727,7 +762,7 @@
 				"Preferences: Browse Packages"
 			]
 		],
-		"width": 504.0
+		"width": 408.0
 	},
 	"console":
 	{
@@ -749,6 +784,17 @@
 	},
 	"file_history":
 	[
+		"/home/grizzle/code/run-tracker/views/layout.jade",
+		"/home/grizzle/code/run-tracker/views/footer.jade",
+		"/home/grizzle/code/run-tracker/views/index.jade",
+		"/home/grizzle/code/run-tracker/node_modules/express/LICENSE",
+		"/home/grizzle/code/run-tracker/routes/index.js",
+		"/home/grizzle/code/run-tracker/app.js",
+		"/home/grizzle/code/run-tracker/.jshintrc",
+		"/home/grizzle/code/run-tracker/.gitignore",
+		"/home/grizzle/code/run-tracker/bin/www",
+		"/home/grizzle/code/run-tracker/node_modules/express/node_modules/connect/lib/middleware/json.js",
+		"/home/grizzle/code/run-tracker/node_modules/.bin/jade",
 		"/home/grizzle/code/mean-tasks/public/js/controllers/todo.js",
 		"/home/grizzle/code/mean-tasks/public/js/config.js",
 		"/home/grizzle/code/mean-tasks/public/js/app.js",
@@ -865,18 +911,7 @@
 		"/home/grizzle/code/mean-tasks/node_modules/karma-phantomjs-launcher/node_modules/phantomjs/lib/phantom/examples/printenv.coffee",
 		"/home/grizzle/code/mean-tasks/node_modules/forever/node_modules/flatiron/test/fixtures/sample-app/app/new-york/controller.js",
 		"/home/grizzle/code/mean-tasks/node_modules/karma-coverage/node_modules/istanbul/test/cli/sample-project/vendor/dummy_vendor_lib.js",
-		"/home/grizzle/code/mean-tasks/public/lib/jquery/src/css.js",
-		"/home/grizzle/code/mean-tasks/public/lib/angular-ui-router/src/viewScroll.js",
-		"/home/grizzle/code/mean-tasks/public/lib/jquery/src/var/indexOf.js",
-		"/home/grizzle/code/mean-tasks/node_modules/forever/node_modules/flatiron/node_modules/broadway/test/fixtures/sample-app/app/index.js",
-		"/home/grizzle/code/mean-tasks/node_modules/karma-phantomjs-launcher/node_modules/phantomjs/node_modules/npmconf/node_modules/config-chain/test/env.js",
-		"/home/grizzle/code/mean-tasks/node_modules/express/node_modules/connect/node_modules/multiparty/test/fixture/js/encoding.js",
-		"/home/grizzle/code/mean-tasks/node_modules/express/node_modules/connect/node_modules/multiparty/test/fixture/multi_video.upload",
-		"/home/grizzle/code/mean-tasks/app/routes/index.js",
-		"/home/grizzle/code/mean-tasks/server.js",
-		"/home/grizzle/code/mean-tasks/npm-debug.log",
-		"/home/grizzle/code/mean-tasks/node_modules/forever/node_modules/flatiron/node_modules/prompt/examples/nested-properties-prompt.js",
-		"/home/grizzle/code/mean-tasks/node_modules/mongoose/node_modules/mpromise/test/promises.Aplus.js"
+		"/home/grizzle/code/mean-tasks/public/lib/jquery/src/css.js"
 	],
 	"find":
 	{
@@ -887,6 +922,8 @@
 		"height": 90.0,
 		"where_history":
 		[
+			"/home/grizzle/code/run-tracker,-/home/grizzle/code/run-tracker/node_modules",
+			"/home/grizzle/code/run-tracker",
 			"/home/grizzle/code/mean-tasks/app",
 			"/home/grizzle/code/mean-tasks/public",
 			"/home/grizzle/code/mean-tasks/app",
@@ -928,6 +965,8 @@
 		"case_sensitive": true,
 		"find_history":
 		[
+			"javascripts",
+			"//",
 			"formatter",
 			"pad",
 			"jshint",
@@ -1053,14 +1092,12 @@
 			"\\.user",
 			"users/me",
 			"users\\/me",
-			"users/me",
-			"flash",
-			"logout"
+			"users/me"
 		],
 		"highlight": true,
 		"in_selection": false,
 		"preserve_case": false,
-		"regex": false,
+		"regex": true,
 		"replace_history":
 		[
 			"  ",
@@ -1195,14 +1232,107 @@
 		"reverse": false,
 		"show_context": false,
 		"use_buffer2": true,
-		"whole_word": false,
+		"whole_word": true,
 		"wrap": true
 	},
 	"groups":
 	[
 		{
+			"selected": 1,
 			"sheets":
 			[
+				{
+					"buffer": 0,
+					"file": "README.md",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 431,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								222,
+								222
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Markdown/Markdown.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "views/header.jade",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 85,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								85,
+								85
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/Jade/Syntaxes/Jade.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 0,
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 0,
+			"sheets":
+			[
+				{
+					"buffer": 2,
+					"file": "public/js/app.js",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 538,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								467,
+								467
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 1,
+					"type": "text"
+				}
 			]
 		}
 	],
@@ -1223,11 +1353,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.5,
 			1.0
 		],
 		"rows":
@@ -1256,6 +1393,42 @@
 		"height": 0.0,
 		"selected_items":
 		[
+			[
+				"layout",
+				"views/layout.jade"
+			],
+			[
+				".jsh",
+				".jshintrc"
+			],
+			[
+				"",
+				".jshintrc"
+			],
+			[
+				".js",
+				".jshintrc"
+			],
+			[
+				"foot",
+				"views/footer.jade"
+			],
+			[
+				".",
+				".jshintrc"
+			],
+			[
+				"app.js",
+				"app.js"
+			],
+			[
+				".git",
+				".gitignore"
+			],
+			[
+				"jshin",
+				".jshintrc"
+			],
 			[
 				"pub/js/cont/done",
 				"public/js/controllers/done.js"
@@ -1298,10 +1471,6 @@
 			],
 			[
 				".jshin",
-				".jshintrc"
-			],
-			[
-				".js",
 				".jshintrc"
 			],
 			[
@@ -1451,10 +1620,6 @@
 			[
 				"pub/view/hea",
 				"public/views/header.html"
-			],
-			[
-				"",
-				".jshintrc"
 			],
 			[
 				"app/view/incl/foo",
@@ -1739,34 +1904,6 @@
 			[
 				"ap/vie/in/fo",
 				"app/views/includes/foot.html"
-			],
-			[
-				"app/view/inclhe",
-				"app/views/includes/head.html"
-			],
-			[
-				"app/con/u",
-				"app/controllers/users.js"
-			],
-			[
-				"app/route/to",
-				"app/routes/todo-tasks.js"
-			],
-			[
-				"model/art",
-				"app/models/article.js"
-			],
-			[
-				"test/mocha/user",
-				"test/mocha/user/model.js"
-			],
-			[
-				"test/moch/tod",
-				"test/mocha/todo-task/model.js"
-			],
-			[
-				"pub/js/head",
-				"public/js/controllers/header.js"
 			]
 		],
 		"width": 0.0
@@ -1776,6 +1913,18 @@
 		"height": 500.0,
 		"selected_items":
 		[
+			[
+				"mean-tas",
+				"~/code/mean-tasks/mean-tasks.sublime-project"
+			],
+			[
+				"meanta",
+				"~/code/mean-tasks/mean-tasks.sublime-project"
+			],
+			[
+				"mean-ta",
+				"~/code/mean-tasks/mean-tasks.sublime-project"
+			],
 			[
 				"mean",
 				"~/code/mean.sublime-project"

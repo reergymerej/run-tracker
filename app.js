@@ -1,3 +1,5 @@
+'use strict';
+
 var express = require('express');
 var http = require('http');
 var path = require('path');
@@ -15,6 +17,11 @@ var app = express();
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'jade');
 
+// produce readable markup
+app.configure('development', function () {
+    app.locals.pretty = true;
+});
+
 app.use(favicon());
 app.use(logger('dev'));
 app.use(bodyParser.json());
@@ -25,9 +32,13 @@ app.use(app.router);
 
 app.get('/', routes.index);
 app.get('/users', users.list);
+app.get('/partial/:name', function (req, res) {
+    res.render('partials/' + req.params.name);
+});
 
 /// catch 404 and forwarding to error handler
 app.use(function(req, res, next) {
+    
     var err = new Error('Not Found');
     err.status = 404;
     next(err);
