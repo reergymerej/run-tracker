@@ -8,18 +8,18 @@ angular.module('run-tracker', [
 // routing ================================================
 .config(['$routeProvider', 
     function ($routeProvider) {
-        // $routeProvider
-        //     .when('/', {
-        //         templateUrl: 'view/home.html',
-        //         controller: 'HomeCtrl'
-        //     })
-        //     .when('/add', {
-        //         templateUrl: 'view/add-run',
-        //         controller: 'AddRunCtrl'
-        //     })
-        //     .otherwise({
-        //         redirectTo: '/'
-        //     });
+        $routeProvider
+            .when('/', {
+                templateUrl: 'partial/home',
+                controller: 'HomeCtrl'
+            })
+            .when('/add', {
+                templateUrl: 'partial/add-run',
+                controller: 'AddRunCtrl'
+            })
+            .otherwise({
+                redirectTo: '/'
+            });
     }])
 
 // controllers ================================================
@@ -38,6 +38,10 @@ angular.module('run-tracker', [
             name: 'view runs'
         }
     ];
+}])
+
+.controller('HomeCtrl', ['$scope', function ($scope) {
+
 }])
 
 .controller('AddRunCtrl', ['$scope', function ($scope) {

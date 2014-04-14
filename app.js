@@ -32,6 +32,8 @@ app.use(app.router);
 
 app.get('/', routes.index);
 app.get('/users', users.list);
+
+// Look for requests for partials.
 app.get('/partial/:name', function (req, res) {
     res.render('partials/' + req.params.name);
 });
