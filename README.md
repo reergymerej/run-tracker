@@ -1,5 +1,9 @@
 # Building a Fresh MEAN Stack
 
+### NPM
+
+Installing an npm module does not add it to package.json.
+
 ### Node
 
 add `'use strict;'` to the top of each file or JSHint will ask for it in each function
@@ -24,4 +28,5 @@ use terse boolean attributes with div(blah)
 ### references
 http://jade-lang.com/reference/
 http://bahmutov.calepin.co/angularjs-inside-jade-templates.html
-http://stackoverflow.com/questions/18746063/is-it-possible-to-render-x-jade-partial-in-angular
+http://stackoverflow.com/questions/18746063/is-it-possible-to-render-x-jade-partial-in-angular  
+http://package.json.nodejitsu.com/

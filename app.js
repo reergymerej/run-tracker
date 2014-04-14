@@ -7,6 +7,7 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var device = require('express-device');
 
 var routes = require('./routes');
 var users = require('./routes/user');
@@ -21,6 +22,24 @@ app.set('view engine', 'jade');
 app.configure('development', function () {
     app.locals.pretty = true;
 });
+
+// Hook in express-device to check for mobile.
+app.use(device.capture());
+
+// middleware to determine view path
+app.use(function (req, res, next) {
+    var mobile = req.device.type !== 'desktop',
+        path = __dirname + '/views';
+
+    if (mobile || true) {
+        path += '/mobile';
+    }
+
+    app.set('views', path);
+
+    next();
+});
+
 
 app.use(favicon());
 app.use(logger('dev'));
